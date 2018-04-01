@@ -9,6 +9,10 @@ const path   = require('path')
 // ====================================================
 app.use(morgan('dev'))
 
+
+
+// Routes
+// ====================================================
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + '/pages/index.html'))
 })
